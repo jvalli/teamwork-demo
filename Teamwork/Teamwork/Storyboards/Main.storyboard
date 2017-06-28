@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-1052" y="-339"/>
         </scene>
-        <!--Login-->
+        <!--Projects-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="TWLoginVC" title="Login" id="BYZ-38-t0r" customClass="TWLoginVC" customModule="Teamwork" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TWProjectsVC" title="Projects" id="BYZ-38-t0r" customClass="TWProjectsVC" customModule="Teamwork" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -36,13 +36,58 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u2Y-D8-teZ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TWProjectCell" id="mZ3-vC-BEG" customClass="TWProjectCell" customModule="Teamwork" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mZ3-vC-BEG" id="cLc-EN-v1D">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQ1-nd-5Sb">
+                                                    <rect key="frame" x="15" y="5" width="103.5" height="33.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="fQ1-nd-5Sb" secondAttribute="bottom" constant="5" id="mbW-X4-wYr"/>
+                                                <constraint firstItem="fQ1-nd-5Sb" firstAttribute="leading" secondItem="cLc-EN-v1D" secondAttribute="leading" constant="15" id="xaT-Aj-yUk"/>
+                                                <constraint firstItem="fQ1-nd-5Sb" firstAttribute="top" secondItem="cLc-EN-v1D" secondAttribute="top" constant="5" id="zU9-nI-zlK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelName" destination="fQ1-nd-5Sb" id="S1g-td-cu7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="iSG-M3-Egv"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Djr-7f-Jlg"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="u2Y-D8-teZ" secondAttribute="trailing" id="8No-ZS-cyU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="u2Y-D8-teZ" secondAttribute="bottom" id="GxI-o0-neT"/>
+                            <constraint firstItem="u2Y-D8-teZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="KjY-Cw-YGK"/>
+                            <constraint firstItem="u2Y-D8-teZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pIl-em-7br"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NLL-fr-DWZ"/>
+                    <connections>
+                        <outlet property="tableViewProjects" destination="u2Y-D8-teZ" id="w7I-Dw-NzP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="-340"/>
+            <point key="canvasLocation" x="20" y="-340.47976011994007"/>
         </scene>
     </scenes>
 </document>

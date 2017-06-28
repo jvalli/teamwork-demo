@@ -43,7 +43,7 @@ class TWBaseAPI: NSObject {
                     handler?(nil, error)
                 } else if let json = response.result.value {
                     print("JSON: \(json)")
-                    
+                    handler?(json, nil)
                 }
         }
     }

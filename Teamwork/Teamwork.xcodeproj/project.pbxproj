@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0777CB54E21171B08B7D5207 /* Pods_Teamwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6189F06DF5C737AE061B0C /* Pods_Teamwork.framework */; };
+		CA2DFF6F1F03FC3C00C9F0C1 /* TWProjectsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2DFF6E1F03FC3C00C9F0C1 /* TWProjectsController.swift */; };
+		CA2DFF721F03FDE700C9F0C1 /* TWProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2DFF711F03FDE700C9F0C1 /* TWProject.swift */; };
+		CA2DFF751F04074200C9F0C1 /* TWProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2DFF741F04074200C9F0C1 /* TWProjectCell.swift */; };
 		CA8E0C8B1EF982B500CE250A /* TWAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E0C841EF982B500CE250A /* TWAppDelegate.swift */; };
 		CA8E0C8C1EF982B500CE250A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA8E0C851EF982B500CE250A /* Assets.xcassets */; };
 		CA8E0C8D1EF982B500CE250A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8E0C871EF982B500CE250A /* LaunchScreen.storyboard */; };
 		CA8E0C8E1EF982B500CE250A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8E0C881EF982B500CE250A /* Main.storyboard */; };
-		CA8E0C8F1EF982B500CE250A /* TWLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E0C8A1EF982B500CE250A /* TWLoginVC.swift */; };
+		CA8E0C8F1EF982B500CE250A /* TWProjectsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E0C8A1EF982B500CE250A /* TWProjectsVC.swift */; };
 		CA8E0C921EF984F000CE250A /* TWConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E0C911EF984F000CE250A /* TWConstants.swift */; };
 		CA8E0C951EF986DE00CE250A /* TWBaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E0C941EF986DE00CE250A /* TWBaseAPI.swift */; };
 /* End PBXBuildFile section */
@@ -20,13 +23,16 @@
 /* Begin PBXFileReference section */
 		44FDB5DA5A872FAA2CCA204D /* Pods-Teamwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teamwork.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Teamwork/Pods-Teamwork.release.xcconfig"; sourceTree = "<group>"; };
 		C5F5B8931D4BE0A27E9F6019 /* Pods-Teamwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teamwork.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Teamwork/Pods-Teamwork.debug.xcconfig"; sourceTree = "<group>"; };
+		CA2DFF6E1F03FC3C00C9F0C1 /* TWProjectsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TWProjectsController.swift; path = Controllers/TWProjectsController.swift; sourceTree = "<group>"; };
+		CA2DFF711F03FDE700C9F0C1 /* TWProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TWProject.swift; path = Models/TWProject.swift; sourceTree = "<group>"; };
+		CA2DFF741F04074200C9F0C1 /* TWProjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TWProjectCell.swift; path = Cells/TWProjectCell.swift; sourceTree = "<group>"; };
 		CA8E0C6B1EF9814200CE250A /* Teamwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teamwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8E0C811EF9828600CE250A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		CA8E0C841EF982B500CE250A /* TWAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWAppDelegate.swift; sourceTree = "<group>"; };
 		CA8E0C851EF982B500CE250A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA8E0C871EF982B500CE250A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA8E0C881EF982B500CE250A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		CA8E0C8A1EF982B500CE250A /* TWLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWLoginVC.swift; sourceTree = "<group>"; };
+		CA8E0C8A1EF982B500CE250A /* TWProjectsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWProjectsVC.swift; sourceTree = "<group>"; };
 		CA8E0C911EF984F000CE250A /* TWConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TWConstants.swift; path = Utils/TWConstants.swift; sourceTree = "<group>"; };
 		CA8E0C941EF986DE00CE250A /* TWBaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TWBaseAPI.swift; path = API/TWBaseAPI.swift; sourceTree = "<group>"; };
 		FE6189F06DF5C737AE061B0C /* Pods_Teamwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teamwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +56,22 @@
 				FE6189F06DF5C737AE061B0C /* Pods_Teamwork.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA2DFF701F03FDCB00C9F0C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA2DFF711F03FDE700C9F0C1 /* TWProject.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CA2DFF731F04071F00C9F0C1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CA2DFF741F04074200C9F0C1 /* TWProjectCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		CA8E0C621EF9814200CE250A = {
@@ -77,6 +99,7 @@
 				CA8E0C831EF982B500CE250A /* AppDelegate */,
 				CA8E0C851EF982B500CE250A /* Assets.xcassets */,
 				CA8E0C961EF99F3700CE250A /* Controllers */,
+				CA2DFF701F03FDCB00C9F0C1 /* Models */,
 				CA8E0C861EF982B500CE250A /* Storyboards */,
 				CA8E0C801EF981B500CE250A /* Supporting Files */,
 				CA8E0C901EF984D100CE250A /* Utils */,
@@ -113,7 +136,8 @@
 		CA8E0C891EF982B500CE250A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CA8E0C8A1EF982B500CE250A /* TWLoginVC.swift */,
+				CA2DFF731F04071F00C9F0C1 /* Cells */,
+				CA8E0C8A1EF982B500CE250A /* TWProjectsVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -137,6 +161,7 @@
 		CA8E0C961EF99F3700CE250A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CA2DFF6E1F03FC3C00C9F0C1 /* TWProjectsController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -275,9 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA8E0C8F1EF982B500CE250A /* TWLoginVC.swift in Sources */,
+				CA8E0C8F1EF982B500CE250A /* TWProjectsVC.swift in Sources */,
 				CA8E0C8B1EF982B500CE250A /* TWAppDelegate.swift in Sources */,
+				CA2DFF721F03FDE700C9F0C1 /* TWProject.swift in Sources */,
 				CA8E0C951EF986DE00CE250A /* TWBaseAPI.swift in Sources */,
+				CA2DFF751F04074200C9F0C1 /* TWProjectCell.swift in Sources */,
+				CA2DFF6F1F03FC3C00C9F0C1 /* TWProjectsController.swift in Sources */,
 				CA8E0C921EF984F000CE250A /* TWConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

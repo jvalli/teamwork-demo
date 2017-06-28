@@ -25,5 +25,19 @@ class TWConstants {
         public struct Endpoints {
             public static let projects = "/projects.json"
         }
+        
+        public struct Keys {
+            public static let projects = "projects"
+            public static let id = "id"
+            public static let name = "name"
+            public static let description = "description"
+            public static let logo = "logo"
+        }
+    }
+    
+    public struct UI {
+        public struct CellIdentifiers {
+            public static let projectCell = "TWProjectCell"
+        }
     }
 }
