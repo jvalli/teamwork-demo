@@ -23,6 +23,7 @@
 		CA8E0C8F1EF982B500CE250A /* TWProjectsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E0C8A1EF982B500CE250A /* TWProjectsVC.swift */; };
 		CA8E0C921EF984F000CE250A /* TWConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E0C911EF984F000CE250A /* TWConstants.swift */; };
 		CA8E0C951EF986DE00CE250A /* TWBaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E0C941EF986DE00CE250A /* TWBaseAPI.swift */; };
+		CAAAC7DE1F0469A500699A28 /* TWTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAAC7DD1F0469A500699A28 /* TWTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		CA8E0C8A1EF982B500CE250A /* TWProjectsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWProjectsVC.swift; sourceTree = "<group>"; };
 		CA8E0C911EF984F000CE250A /* TWConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TWConstants.swift; path = Utils/TWConstants.swift; sourceTree = "<group>"; };
 		CA8E0C941EF986DE00CE250A /* TWBaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TWBaseAPI.swift; path = API/TWBaseAPI.swift; sourceTree = "<group>"; };
+		CAAAC7DD1F0469A500699A28 /* TWTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TWTask.swift; path = Models/TWTask.swift; sourceTree = "<group>"; };
 		FE6189F06DF5C737AE061B0C /* Pods_Teamwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teamwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				CA2DFF711F03FDE700C9F0C1 /* TWProject.swift */,
+				CAAAC7DD1F0469A500699A28 /* TWTask.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				CA7FE79B1F041E0D0064A1A3 /* TWTasksVC.swift in Sources */,
 				CA7FE79D1F041FA10064A1A3 /* TWTasksController.swift in Sources */,
 				CA2DFF751F04074200C9F0C1 /* TWProjectCell.swift in Sources */,
+				CAAAC7DE1F0469A500699A28 /* TWTask.swift in Sources */,
 				CA7FE7971F0410AE0064A1A3 /* TWAlertHandling.swift in Sources */,
 				CA2DFF6F1F03FC3C00C9F0C1 /* TWProjectsController.swift in Sources */,
 				CA8E0C921EF984F000CE250A /* TWConstants.swift in Sources */,

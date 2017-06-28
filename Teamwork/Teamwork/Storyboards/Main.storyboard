@@ -145,9 +145,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCm-Me-ro8">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No tasks to list" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cen-wr-52S">
+                                        <rect key="frame" x="15" y="291" width="345" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="cen-wr-52S" firstAttribute="centerY" secondItem="KCm-Me-ro8" secondAttribute="centerY" id="Wxe-qT-vz4"/>
+                                    <constraint firstItem="cen-wr-52S" firstAttribute="leading" secondItem="KCm-Me-ro8" secondAttribute="leading" constant="15" id="hji-rC-7Lp"/>
+                                    <constraint firstAttribute="trailing" secondItem="cen-wr-52S" secondAttribute="trailing" constant="15" id="x6N-Be-m7J"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yDk-h2-Thq">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TWTaskCell" textLabel="9aB-D3-su0" style="IBUITableViewCellStyleDefault" id="HHi-qi-A2q">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HHi-qi-A2q" id="Nuc-cb-F5Z">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9aB-D3-su0">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="lSq-If-oYx" id="Fg7-5R-h4O"/>
+                                    <outlet property="delegate" destination="lSq-If-oYx" id="LIR-km-gkB"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -155,10 +195,18 @@
                             <constraint firstItem="yDk-h2-Thq" firstAttribute="leading" secondItem="PMe-7P-2G4" secondAttribute="leading" id="HJb-uM-SIO"/>
                             <constraint firstAttribute="trailing" secondItem="yDk-h2-Thq" secondAttribute="trailing" id="Jzj-VX-z7H"/>
                             <constraint firstItem="yDk-h2-Thq" firstAttribute="top" secondItem="OgZ-va-BMQ" secondAttribute="bottom" id="dsn-EC-NPN"/>
+                            <constraint firstItem="KCm-Me-ro8" firstAttribute="leading" secondItem="PMe-7P-2G4" secondAttribute="leading" id="e48-fM-qHN"/>
+                            <constraint firstAttribute="trailing" secondItem="KCm-Me-ro8" secondAttribute="trailing" id="gX4-zw-Evi"/>
+                            <constraint firstItem="M8S-1I-ciV" firstAttribute="top" secondItem="KCm-Me-ro8" secondAttribute="bottom" id="sA5-qc-m3g"/>
                             <constraint firstItem="M8S-1I-ciV" firstAttribute="top" secondItem="yDk-h2-Thq" secondAttribute="bottom" id="sS5-9V-QJj"/>
+                            <constraint firstItem="KCm-Me-ro8" firstAttribute="top" secondItem="OgZ-va-BMQ" secondAttribute="bottom" id="z6N-vC-3JX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="i60-JB-bZk"/>
+                    <connections>
+                        <outlet property="tableViewTasks" destination="yDk-h2-Thq" id="JS5-az-im6"/>
+                        <outlet property="viewNoTasks" destination="KCm-Me-ro8" id="h6D-6P-1SQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LZa-Tq-bVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

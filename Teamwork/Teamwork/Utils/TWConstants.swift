@@ -12,8 +12,8 @@ import UIKit
 class TWConstants {
     
     public struct Teamwork {
-        public static let token = "{Your Teamwork API token}"
-        public static let host = "{Your Teamwork host URL}"
+        public static let token = "twp_eUrUN6H62LGk6j4lwvZedirhyFr0"
+        public static let host = "https://bminds.teamwork.com"
     }
     
     public struct API {
@@ -27,6 +27,7 @@ class TWConstants {
         
         public struct Endpoints {
             public static let projects = "/projects.json"
+            public static let projectTasks = "/projects/%@/tasks.json"
         }
         
         public struct StatusCodes {
@@ -39,12 +40,15 @@ class TWConstants {
             public static let name = "name"
             public static let description = "description"
             public static let logo = "logo"
+            public static let todoItems = "todo-items"
+            public static let content = "content"
         }
     }
     
     public struct UI {
         public struct CellIdentifiers {
             public static let projectCell = "TWProjectCell"
+            public static let taskCell = "TWTaskCell"
         }
         
         public struct MimeTypes {
