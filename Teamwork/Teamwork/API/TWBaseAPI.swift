@@ -12,9 +12,9 @@ import SwiftyJSON
 
 class TWBaseAPI: NSObject {
     
-    public typealias TWOnResponseHandler = (_ response: Any?, _ error: Error?) -> Void
-    
     // MARK: - # Constants
+    
+    public typealias TWOnResponseHandler = (_ response: Any?, _ error: Error?) -> Void
     
     fileprivate let headers: [String: String] = {
         let credentialData = "\(TWConstants.API.token):".data(using: String.Encoding.utf8)!

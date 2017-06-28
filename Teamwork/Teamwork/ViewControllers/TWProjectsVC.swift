@@ -8,18 +8,42 @@
 
 import UIKit
 
-class TWProjectsVC: UIViewController {
+class TWProjectsVC: TWBaseVC {
 
+    // MARK: - # Variables
+    
     @IBOutlet weak var tableViewProjects: UITableView!
+    @IBOutlet weak var viewNoProjects: UIView!
     
     var projectsController = TWProjectsController()
+    
+    // MARK: - # Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loadViewData()
+    }
+    
+    // MARK: - # Private functions
+    
+    fileprivate func loadViewData() {
+        
+        displayLoadingSpinner()
         projectsController.getProjectList(handler: { projects, error in
             
+            if projects != nil, projects!.count > 0 {
+                self.viewNoProjects.isHidden = true
+                self.view.bringSubview(toFront: self.tableViewProjects)
+            } else {
+                self.viewNoProjects.isHidden = false
+                self.view.bringSubview(toFront: self.viewNoProjects)
+                if error != nil {
+                    TWAlertView.displayErrorAlert(message: error!.localizedDescription, sender: self)
+                }
+            }
             self.tableViewProjects.reloadData()
+            self.hideLoadingSpinner()
         })
     }
 }
@@ -42,4 +66,7 @@ extension TWProjectsVC: UITableViewDataSource {
 
 extension TWProjectsVC: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }

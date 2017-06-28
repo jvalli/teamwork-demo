@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class TWConstants {
     
@@ -26,6 +27,10 @@ class TWConstants {
             public static let projects = "/projects.json"
         }
         
+        public struct StatusCodes {
+            public static let success = 200
+        }
+        
         public struct Keys {
             public static let projects = "projects"
             public static let id = "id"
@@ -39,5 +44,13 @@ class TWConstants {
         public struct CellIdentifiers {
             public static let projectCell = "TWProjectCell"
         }
+        
+        public struct MimeTypes {
+            public static let image = "image"
+        }
+    }
+    
+    public struct Colors {
+        public static let transparentGray = UIColor(red: 128.0/255.0, green: 128.0/255.0, blue: 128.0/255.0, alpha: 0.7)
     }
 }

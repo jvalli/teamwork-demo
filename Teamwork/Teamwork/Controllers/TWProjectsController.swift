@@ -10,11 +10,17 @@ import Foundation
 
 class TWProjectsController: NSObject {
     
+    // MARK: - # Variables
+    
     fileprivate var allProjects = [TWProject]()
+    
+    // MARK: - # Life Cycle
     
     override init() {
         super.init()
     }
+    
+    // MARK: - # Public functions
     
     public func getProjectList(handler: ((_ projects: [TWProject]?, _ error: Error?) -> Void)?) {
         

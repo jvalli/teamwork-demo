@@ -10,10 +10,14 @@ import Foundation
 
 class TWProject: NSObject {
     
+    // MARK: - # Variables
+    
     var projectId: String?
     var projectName: String?
     var projectDescription: String?
     var projectLogo: String?
+    
+    // MARK: - # Life Cycle
     
     override init() {
         super.init()
