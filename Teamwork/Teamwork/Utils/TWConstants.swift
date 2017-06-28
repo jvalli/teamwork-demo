@@ -42,6 +42,13 @@ class TWConstants {
             public static let logo = "logo"
             public static let todoItems = "todo-items"
             public static let content = "content"
+            public static let completed = "completed"
+            public static let creatorId = "creator-id"
+            public static let creatorFirstname = "creator-firstname"
+            public static let creatorLastname = "creator-lastname"
+            public static let responsiblePartyId = "responsible-party-id"
+            public static let responsiblePartyFirstname = "responsible-party-firstname"
+            public static let responsiblePartyLastname = "responsible-party-lastname"
         }
     }
     
