@@ -16,3 +16,20 @@ Then go to the project folder and run the following command:
 ```
 pod install
 ```
+
+## Configuration:
+
+The only configuration you will need is to setup your Teamwork credentials on `TWConstants`->`Teamwork`:
+
+- Your Teamwork API token
+- Your Teamwork host URL
+
+```
+class TWConstants {
+
+    public struct Teamwork {
+        public static let token = "{Your Teamwork API token}"
+        public static let host = "{Your Teamwork host URL}"
+    }
+...
+```

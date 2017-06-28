@@ -17,7 +17,7 @@ class TWBaseAPI: NSObject {
     public typealias TWOnResponseHandler = (_ response: Any?, _ error: Error?) -> Void
     
     fileprivate let headers: [String: String] = {
-        let credentialData = "\(TWConstants.API.token):".data(using: String.Encoding.utf8)!
+        let credentialData = "\(TWConstants.Teamwork.token):".data(using: String.Encoding.utf8)!
         let base64Credentials = credentialData.base64EncodedString()
         return [TWConstants.API.Headers.contentType: TWConstants.API.Headers.applicationJson,
                 TWConstants.API.Headers.accept: TWConstants.API.Headers.applicationJson,
@@ -36,7 +36,7 @@ class TWBaseAPI: NSObject {
     
     public func GET(endpoint: String, parameters: Parameters?, handler: TWOnResponseHandler?) {
         
-        Alamofire.request("\(TWConstants.API.host)\(endpoint)", method: .get, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+        Alamofire.request("\(TWConstants.Teamwork.host)\(endpoint)", method: .get, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
             .responseJSON { response in
                 
                 if let error = response.error {
