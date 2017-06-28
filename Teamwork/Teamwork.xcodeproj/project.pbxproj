@@ -14,6 +14,8 @@
 		CA2DFF781F0409E200C9F0C1 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2DFF771F0409E200C9F0C1 /* UIImageView.swift */; };
 		CA7FE7971F0410AE0064A1A3 /* TWAlertHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FE7961F0410AE0064A1A3 /* TWAlertHandling.swift */; };
 		CA7FE7991F0412170064A1A3 /* TWBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FE7981F0412170064A1A3 /* TWBaseVC.swift */; };
+		CA7FE79B1F041E0D0064A1A3 /* TWTasksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FE79A1F041E0D0064A1A3 /* TWTasksVC.swift */; };
+		CA7FE79D1F041FA10064A1A3 /* TWTasksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FE79C1F041FA10064A1A3 /* TWTasksController.swift */; };
 		CA8E0C8B1EF982B500CE250A /* TWAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E0C841EF982B500CE250A /* TWAppDelegate.swift */; };
 		CA8E0C8C1EF982B500CE250A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA8E0C851EF982B500CE250A /* Assets.xcassets */; };
 		CA8E0C8D1EF982B500CE250A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8E0C871EF982B500CE250A /* LaunchScreen.storyboard */; };
@@ -32,6 +34,8 @@
 		CA2DFF771F0409E200C9F0C1 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageView.swift; path = Extensions/UIImageView.swift; sourceTree = "<group>"; };
 		CA7FE7961F0410AE0064A1A3 /* TWAlertHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TWAlertHandling.swift; path = Utils/TWAlertHandling.swift; sourceTree = "<group>"; };
 		CA7FE7981F0412170064A1A3 /* TWBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWBaseVC.swift; sourceTree = "<group>"; };
+		CA7FE79A1F041E0D0064A1A3 /* TWTasksVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWTasksVC.swift; sourceTree = "<group>"; };
+		CA7FE79C1F041FA10064A1A3 /* TWTasksController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TWTasksController.swift; path = Controllers/TWTasksController.swift; sourceTree = "<group>"; };
 		CA8E0C6B1EF9814200CE250A /* Teamwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teamwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8E0C811EF9828600CE250A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		CA8E0C841EF982B500CE250A /* TWAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWAppDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 				CA2DFF731F04071F00C9F0C1 /* Cells */,
 				CA7FE7981F0412170064A1A3 /* TWBaseVC.swift */,
 				CA8E0C8A1EF982B500CE250A /* TWProjectsVC.swift */,
+				CA7FE79A1F041E0D0064A1A3 /* TWTasksVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				CA2DFF6E1F03FC3C00C9F0C1 /* TWProjectsController.swift */,
+				CA7FE79C1F041FA10064A1A3 /* TWTasksController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -323,6 +329,8 @@
 				CA8E0C8B1EF982B500CE250A /* TWAppDelegate.swift in Sources */,
 				CA2DFF721F03FDE700C9F0C1 /* TWProject.swift in Sources */,
 				CA8E0C951EF986DE00CE250A /* TWBaseAPI.swift in Sources */,
+				CA7FE79B1F041E0D0064A1A3 /* TWTasksVC.swift in Sources */,
+				CA7FE79D1F041FA10064A1A3 /* TWTasksController.swift in Sources */,
 				CA2DFF751F04074200C9F0C1 /* TWProjectCell.swift in Sources */,
 				CA7FE7971F0410AE0064A1A3 /* TWAlertHandling.swift in Sources */,
 				CA2DFF6F1F03FC3C00C9F0C1 /* TWProjectsController.swift in Sources */,

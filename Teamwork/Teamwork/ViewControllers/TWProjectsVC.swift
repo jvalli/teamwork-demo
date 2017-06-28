@@ -25,6 +25,15 @@ class TWProjectsVC: TWBaseVC {
         loadViewData()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == TWConstants.Segues.goToTasksScreen {
+            if let tasksVC = segue.destination as? TWTasksVC, let project = projectsController.getSelectedProject() {
+                tasksVC.loadTasksController(with: project)
+            }
+        }
+    }
+    
     // MARK: - # Private functions
     
     fileprivate func loadViewData() {
@@ -67,6 +76,9 @@ extension TWProjectsVC: UITableViewDataSource {
 extension TWProjectsVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let project = projectsController.getAllProjects()[indexPath.row]
+        projectsController.setSelectedProject(project: project)
+        performSegue(withIdentifier: TWConstants.Segues.goToTasksScreen, sender: self)
+        tableViewProjects.deselectRow(at: indexPath, animated: true)
     }
 }

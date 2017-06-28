@@ -55,4 +55,8 @@ class TWConstants {
     public struct Colors {
         public static let transparentGray = UIColor(red: 128.0/255.0, green: 128.0/255.0, blue: 128.0/255.0, alpha: 0.7)
     }
+    
+    public struct Segues {
+        public static let goToTasksScreen = "GoToTasksScreen"
+    }
 }

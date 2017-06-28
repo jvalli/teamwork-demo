@@ -13,6 +13,7 @@ class TWProjectsController: NSObject {
     // MARK: - # Variables
     
     fileprivate var allProjects = [TWProject]()
+    fileprivate var selectedProject: TWProject? = nil
     
     // MARK: - # Life Cycle
     
@@ -41,5 +42,13 @@ class TWProjectsController: NSObject {
     
     public func getAllProjects() -> [TWProject] {
         return allProjects
+    }
+    
+    public func setSelectedProject(project: TWProject) {
+        selectedProject = project
+    }
+    
+    public func getSelectedProject() -> TWProject? {
+        return selectedProject
     }
 }

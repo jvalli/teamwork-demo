@@ -126,11 +126,43 @@
                     <connections>
                         <outlet property="tableViewProjects" destination="u2Y-D8-teZ" id="w7I-Dw-NzP"/>
                         <outlet property="viewNoProjects" destination="7FU-mU-ey8" id="ma8-ts-w0T"/>
+                        <segue destination="lSq-If-oYx" kind="show" identifier="GoToTasksScreen" id="SaJ-XK-o5F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="-340.47976011994007"/>
+        </scene>
+        <!--Tasks-->
+        <scene sceneID="NpP-6w-Mah">
+            <objects>
+                <viewController storyboardIdentifier="TWTasksVC" id="lSq-If-oYx" customClass="TWTasksVC" customModule="Teamwork" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OgZ-va-BMQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="M8S-1I-ciV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PMe-7P-2G4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yDk-h2-Thq">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yDk-h2-Thq" firstAttribute="leading" secondItem="PMe-7P-2G4" secondAttribute="leading" id="HJb-uM-SIO"/>
+                            <constraint firstAttribute="trailing" secondItem="yDk-h2-Thq" secondAttribute="trailing" id="Jzj-VX-z7H"/>
+                            <constraint firstItem="yDk-h2-Thq" firstAttribute="top" secondItem="OgZ-va-BMQ" secondAttribute="bottom" id="dsn-EC-NPN"/>
+                            <constraint firstItem="M8S-1I-ciV" firstAttribute="top" secondItem="yDk-h2-Thq" secondAttribute="bottom" id="sS5-9V-QJj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tasks" id="i60-JB-bZk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LZa-Tq-bVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1197.5999999999999" y="-340.47976011994007"/>
         </scene>
     </scenes>
 </document>
