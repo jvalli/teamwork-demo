@@ -1,9 +1,9 @@
 # teamwork-demo
 
 ## What you will need
-- Swift 3
+- Swift 3.0 or later
 - Xcode 8.0 or later
-- iOS 9 or later
+- iOS 8.0+
 - CocoaPods
 
 ## Installation Steps:
