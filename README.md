@@ -21,8 +21,8 @@ pod install
 
 The only configuration you will need is to setup your Teamwork credentials on `TWConstants`->`Teamwork`:
 
-- Your Teamwork API token
-- Your Teamwork host URL
+- Your Teamwork API token [How to get your API token?](https://developer.teamwork.com/enabletheapiandgetyourkey)
+- Your Teamwork host URL `https://something.teamwork.com`
 
 ```
 class TWConstants {
